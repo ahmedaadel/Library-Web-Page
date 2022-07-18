@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="{% static 'h1.css' %}">
+   
+</head>
+<body>
+    
+    <section id="intro">
+        <div class="container"></div>
+              <div class="rcol">
+            <div class="formcontainer">
+                <form action=""  method="POST">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="Name" name="name"  >
+                        <p class="error">u ahve to enter rghit email plz </p>
+                    </div>
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input id="password" type="text" placeholder="Password" name="password">
+                        <p class="error">password cannot be empty </p>
+                    </div>
+                    <div class="field">
+                        <label for="ConfirmPassword">Confirm Password</label>
+                        <input type="text" id="ConfirmPassword" placeholder="Confirm Password" name="password">
+                        <p class="error">ConfirmPassword cannot be empty </p>
+                    </div>
+                    <button type="submit" value="save">Update your info </button>
+                    <!-- <button ><a href="m7m.html" target="_blank" style="text-decoration: none;">to return back</a></button> -->
+                    <button><a href="m7m.html"  style="text-decoration: none;">retrun</a></button>   
+                </form>
+               
+        </div>
+    </div>
+ </div>
+    </section>
+    <script src="h1.js"></script>
+</body>
+</html>

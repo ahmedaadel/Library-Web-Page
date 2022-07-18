@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url(https://www.escoffier.edu/wp-content/uploads/2016/08/ThinkstockPhotos-501816888.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav{
+    height:42px;
+    width:100%;
+    padding:20px;
+}
+.navitem{
+    display: inline;
+}
+.name{
+    color:white;
+    font-family: fantasy;
+    padding-top:7px;
+    padding-left:8px;
+    font-size: xx-large;
+    float:left;
+}
+.name:hover{
+    color:brown;
+}
+.pattern{
+    float:left;
+    padding-left:10px;
+}
+.signIn{
+  margin-top:160px;
+  background-color: rgb(0,0,0,0.5);
+  height:290px;
+  width:450px;
+  text-align:center;
+  margin-left:450px;
+}
+.box{
+    height:50px;
+    width:300px;
+    border-radius: 4px;
+    border-style: none;
+    background-color:rgb(255, 252, 249);
+    margin-top: 35px;
+}
+.signButton{
+    height:27px;
+    width:80px;
+    background-color:#ffb758;
+    box-shadow:rgb(0,0,0,0.5) 1px 0 10px;
+    color:white;
+}
+.signButton:hover{
+    background-color: indigo;
+}
+.signUp{
+    font-family:sans-serif;
+    float:right;
+    margin-top:155px;
+    margin-right:70px;
+}
+.boxx{
+    height:40px;
+    width:400px;
+    margin-top:15px;
+    box-shadow:rgb(0,0,0,0.5) 1px 0 10px; 
+    border-style:none;
+    border-radius: 2px;
+}
+.signupButton{
+    background-color:#ffae43;
+    border-style:none;
+    border-radius: 5px;
+    box-shadow:rgb(0,0,0,0.5) 1px 0 10px; 
+    width:200px;
+    float:right;
+    color:white;
+    font-weight: bolder;
+}
+.signupButton:hover{
+    background-color: indigo;
+}
+.pr{ display:inline; color:white;}
+.join{color:#eef7f4;}
+.join:hover{color:black;}
+.heading1{
+    margin-top:130px;
+    font-size:27px;
+    font-weight: bolder;
+    margin-left:40px;
+    color:white;
+    text-shadow: 3px 3px #eca013;
+}
+.tex{
+    font-family:'Trebuchet MS';
+    float:left; 
+    margin-top:120px; 
+    margin-left:40px;
+    font-size:20px;
+    font-weight: bold; 
+    text-shadow: 2px 2px sandybrown;
+    color:white;
+}
+.heading2{
+    margin-top:240px;
+    font-family:'Trebuchet MS';
+    text-shadow: 2px 2px white;
+    margin-left:40px;
+    color:goldenrod;
+    font-style: oblique;
+}
+.cardss{
+    margin-top:50px;
+    margin-left:150px;
+}
+.signinbu{
+    height:50px;
+    width:150px;
+}
+.existt{
+    padding-top:69px;
+    text-decoration: underline;
+}
+.t{
+    color:rgb(20, 0, 200);
+}

@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student</title>
+        <meta charset="UTF-8"/>
+        <link href="{% static 'm7m.css' %}" rel="styleSheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    </head>
+    <body>
+    		<nav class="nav">
+    			<div class="logo">
+    				<p>Student Page
+    			</div>
+    			<ul>
+    				<li><a href="m7m.html">Home</li>
+    				<li><a href="h1.html" >Update Info</a></li>
+    			</ul>
+    		</nav>
+        <form class="form" style=" position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: rgb(226, 205, 88);
+        height: 40px;
+        width: 600px;
+        border-radius: 40px;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: black;">
+           <label>Search By</label>
+           <select  name="search" id="search">
+               <option>Title</option>
+               <option>ISBN</option>
+               <option>Category</option>
+               <option>Publication year</option>
+               <option>Author</option>
+           </select>
+            <input for="search" type="search" class="search-bar" required placeholder="Search for books" autofocus name="searchName">
+            <input type="submit" style="width: 60px ;" >
+        </form>
+        <div  style="
+        position: absolute;
+        right: 26%;
+        top: 42%;
+         width: 500px;
+         height: 500px;
+         text-align: center;
+         color: black;
+         background: rgb(226, 205, 88);">
+        {% for book in books %}
+            <ul>Book Title : {{book.title}}
+               <br> <i>Author : {{book.author}}</i><br>
+                <i>Category : {{book.category}}</i><br>
+                <i>published Date : {{book.publishedYear}}</i><br>
+                <i>ISBN : {{book.isbn}}</i><br>
+                <i>Status : {{book.status}}</i>
+            </ul>   
+            <button>Borrow</button>
+            <button>Extend</button>
+            <button>return</button>
+        {% endfor %}
+        </div>
+    </body>
+</html>

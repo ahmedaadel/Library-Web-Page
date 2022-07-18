@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+
+  <script src="{% static 'jquery-3.4.1.slim.min.js'%}">  </script>
+  <script src="{% static 'popper.min.js'%}"></script>
+  <script src="{% static 'js/bootstrap.min.js'%}"></script>
+
+
+  <style>
+    body{
+
+      background-image: url("{% static 'library.jpg' %}");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment: fixed;
+    }
+    .ll{
+     
+      margin:100px 100px 100px -300px;
+     padding:15px;
+     
+
+
+    } 
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="index2.html">Add Book</a>
+            <a class="dropdown-item" href="index3.html">Remove Book</a> 
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">contact</a>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+
+  <div class="ll">
+
+    <form method="POST" style="width: 500px;background-color:wheat; border-radius: 15px;padding: 20px; margin-left: 750px;">
+        {% csrf_token %}
+      <div class="form-row">  
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Book Title</label>
+          <input name="title" type="text" class="form-control" id="inputPassword4">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Author</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Enter Author name">
+      </div>
+      <div class="form-group">
+  
+      </div>
+      <button type="submit" class="btn btn-primary">Remove</button>
+    </form>
+  </div>
+
+</body>
+</html>

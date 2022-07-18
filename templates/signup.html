@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fcai library</title>
+    <link rel="stylesheet" href="{% static 'libraryy.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap.css' %}">
+
+    <script>
+        function SignUp() {
+            var a = document.forms["secform"]["full name"].value;
+            var b = document.forms["secform"]["mail"].value;
+            var c = document.forms["secform"]["passwordd"].value;
+            if (a == "") {
+                alert("you must enter a name");
+                return false;
+            }
+            if (b !== a + "@fcai.com") {
+                alert("you must enter a correct email");
+                return false;
+            }
+            if (c == "") {
+                alert("you must enter a password ");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="nav">
+        <img src="books.png" alt="library icon" class="navitem pattern" width="74" height="45">
+        <p class="navitem name">FCAI library</p>
+
+    </div>
+    <div class="signUp">
+        <form name="secform" onsubmit="return SignUp()" method="post">
+            <p class="pr"><b>New?</b></p>
+            <p class="pr join">Join us now!</p><br>
+            <input type="text" name="full name" placeholder="User name" class="boxx"><br>
+            <input type="email" name="mail" placeholder="Enter your name followed by @fcai.com" class="boxx"
+                id="mail"><br>
+            <input type="password" name="passwordd" placeholder="Password" class="boxx"><br>
+            <input type="submit" value="Sign up" class="boxx signupButton">
+            <div class="existt"><a href="login.html" class="t">Already have an account ?</a></div>
+        </form>
+    </div>
+    <h1 class="heading1">HERE YOU CAN FIND WHAT YOU WANT!</h1>
+    <p class="tex">A great book should leave you with many experiences,<br>
+        and slightly exhausted at the end.<br> You live several lives while reading.</p>
+    <br>
+    <h2 class="heading2">Books like:</h2>
+    <div class="cardss">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="card">
+                    <img class="card-img-center"
+                        src="https://images-na.ssl-images-amazon.com/images/I/41AvaBmddFL._AC_SX184_.jpg"
+                        height="250px">
+                    <div class="card-body">
+                        <h3 class="card-title">Ariadne</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card show">
+                    <img class="card-img-center"
+                        src="https://images-na.ssl-images-amazon.com/images/I/41HbeJH0GtL._AC_SX184_.jpg"
+                        height="250px">
+                    <div class="card-body">
+                        <h3 class="card-title">Ridgeline </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card show">
+                    <img class="card-img-center"
+                        src="https://images-na.ssl-images-amazon.com/images/I/51TNl-4eiQL._AC_SX184_.jpg"
+                        height="250px">
+                    <div class="card-body">
+                        <h3 class="card-title">Double Blinde</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card show">
+                    <img class="card-img-center"
+                        src="https://images-na.ssl-images-amazon.com/images/I/41fPTKU75PL._AC_SX184_.jpg"
+                        height="250px">
+                    <div class="card-body">
+                        <h3 class="card-title">Pure Flame</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card show">
+                    <img class="card-img-center"
+                        src="https://images-na.ssl-images-amazon.com/images/I/419XBnkjS3L._AC_SX184_.jpg"
+                        height="250px">
+                    <div class="card-body">
+                        <h3 class="card-title">Girl One</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
